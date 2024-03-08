@@ -1,0 +1,1826 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.alignleft.actions.bulkactions #ced_etsy_bulk_operation {
+  margin: 0;
+}
+.ced_etsy_top_wrapper #filter_button {
+  margin: 0;
+}
+.ced-marketplaces-heading-main-wrapper,
+.ced_etsy_wrap.ced_etsy_wrap_extn,
+.ced_etsy_account_configuration_wrapper {
+  padding-right: 20px;
+}
+.ced_etsy_parent_element label {
+  text-transform: uppercase;
+  color: currentColor;
+  font-size: 16px;
+}
+.ced_etsy_parent_element{
+  cursor: pointer;
+}
+.ced_etsy_child_element{
+  display: none;
+}
+
+.ced-marketplaces-heading-wrapper, .ced_etsy_setting_header {
+  padding: 8px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.ced_etsy_setting_header label
+{
+  padding:10px;
+}
+
+.ced-marketplaces-heading-wrapper h2,
+.ced_etsy_setting_header  h2{
+  margin: 0 15px 0 0;
+  font-size: 20px;
+  line-height: 1.33;
+}
+.ced-marketplaces-card-view-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.navigation:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+.ced-marketplace-card {
+  width: 30.33%;
+  margin-right: 3%;
+  margin-top: 30px;
+}
+.ced-marketplace-card a {
+  display: block;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  background-color: #f8f8f8;
+  text-decoration: none;
+}
+.ced-marketplace-card .thumbnail {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  display: block;
+  padding: 20px 0;
+}
+.ced-marketplace-card .mp-label {
+  color: #333;
+  font-size: 18px;
+  padding: 15px 10px;
+}
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 98%;
+}
+#bulk-action-selector-top,#bulk-action-selector-bottom
+{
+  border: 1px solid #ddd ;
+  height: auto !important;
+}
+
+#ced_etsy_logistics
+{
+  height: 60px !important;
+}
+
+.ced_etsy_category_not_mapped{
+  color: red;
+}
+#ced_etsy_category_mapping_header button {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.ced_etsy_current_account_name {
+  font-size: 14px;
+  color: #757171;
+  padding: 8px;
+}
+.navigation {
+  margin: 0 10px;
+}
+.navigation li {
+  float: left;
+  margin: 0 0 0 5px;
+}
+
+.navigation li a {
+  color: black;
+  display: block;
+  padding: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.navigation li a:hover,
+.navigation li a:focus{
+  background-color: #ffffff;
+  color: #444444;
+}
+.navigation li a.active {
+  color: #0073aa;
+  border-bottom: 2px solid #0073aa ;
+}
+.ced_etsy_account_configuration_fields_table th{
+  font-weight: bold;
+}
+.navigation li:first-child{
+  margin: 0 0 0 0px;
+}
+.ced_etsy_account_configuration_fields_table select {
+  border: 1px solid #ddd;
+  height: auto;
+  min-width: 200px;
+}
+.ced_etsy_add_account_popup_main_wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: 0.3s linear all;
+  height: 100%;
+  overflow-y: auto;
+}
+.ced_etsy_add_account_popup_main_wrapper.show {
+  transform: translateY(0);
+  visibility: visible;
+  transition: 0.3s linear all;
+}
+.ced_etsy_add_account_popup_content {
+  max-width: 650px;
+  text-align: center;
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 8px;
+}
+.ced_etsy_add_account_popup_header {
+  background-color: #f1f1f1;
+  padding: 15px;
+  position: relative;
+}
+.ced_etsy_add_account_popup_header h5 {
+  margin: 0;
+  font-size: 22px;
+}
+.ced_etsy_add_account_popup_close {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  color: #877f7f;
+  cursor: pointer;
+}
+.ced_etsy_add_account_popup_body ul {
+  margin: 0;
+}
+.ced_etsy_add_account_popup_body {
+  padding: 30px 40px;
+  overflow: hidden;
+}
+.ced_etsy_add_account_popup_body ul li {
+  list-style-type: decimal;
+  text-align: left;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.ced_etsy_add_account_popup_body h6 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+}
+.ced_etsy_add_account_popup_body h6::after {
+  content: "";
+  border-bottom: 4px solid #444444;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 50px;
+  margin: 0 auto;
+}
+.ced_etsy_add_account_button_wrapper{
+  margin-top: 20px;
+}
+.ced_etsy_add_button {
+  background-color: #0073aa;
+  color: #ffffff;
+  display: inline-block;
+  padding: 9px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid;
+  /*max-width: 81px;*/
+  min-height: 40px;
+  cursor: pointer;
+}
+.ced_etsy_add_button:hover,
+.ced_etsy_add_button:focus{
+  color: #ffffff;
+}
+.ced_etsy_loader,
+.ced_progress{
+  display: none;
+}
+
+.ced_etsy_loader,
+.ced_progress {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.52);
+  width: 100%;
+  z-index: 9999;
+  height: 108%;
+}
+.ced_etsy_loader img {
+  text-align: center;
+  margin: 0 auto;
+  width: 50px;
+  display: block;
+  margin-top: 25%;
+}
+
+.ced_etsy_loader,
+.ced_progress {
+  background-color: rgba(255, 255, 255, 0.6);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+#post-body-content {
+  padding-right: 20px;
+}
+.ced_etsy_categories{
+  display: none;
+}
+.manage_labels
+{
+  font-size: 20px;
+  color: #0073aa;
+}
+.ced_etsy_global_settings_fields_table th label
+{
+  font-weight: bold;
+}
+.ced_etsy_custom_button
+{
+  background-color: #0073aa;
+  color: #ffffff;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+
+.ced_etsy_preview_product_popup_main_wrapper {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: 0.3s linear all;
+  color: #666666;
+
+}
+.ced_etsy_preview_product_popup_main_wrapper.show {
+  transform: translateY(0);
+  visibility: visible;
+  transition: 0.3s linear all;
+}
+.ced_etsy_preview_product_popup_content {
+  max-width: 800px;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  min-height: 450px;
+  height: 100%;
+  clear: both;
+}
+.ced_etsy_preview_product_popup_header {
+  padding: 10px;
+  position: relative;
+}
+.ced_etsy_preview_product_popup_header h5 {
+  margin: 0;
+  font-size: 22px;
+}
+.ced_etsy_preview_product_popup_close {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  color: #877f7f;
+  cursor: pointer;
+}
+.ced_etsy_preview_product_button_wrapper{
+  margin-top: 20px;
+}
+.preview_content {
+  padding: 10px;
+  float: left;
+}
+.preview-image-col {
+  width: 40%;
+}
+.preview_content-col {
+  width: 60%;
+}
+#Price_detail_etsy{
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+}
+#preview-image img {
+  max-width: 290px;
+  height: 210px;
+}
+.preview_product_name{
+  color:  #328eba;
+  font-size: 20px;
+  margin-top:0;
+}
+.ced_etsy_preview_detail_desc img {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.ced_etsy_preview_detail ul li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.ced_etsy_preview_detail_name {
+  width: 100px;
+}
+.ced_etsy_preview_detail_desc {
+  width: calc(100% - 110px);
+  margin-left: 10px;
+}
+.ced_etsy_product_variation {
+  border: 1px solid #dddddd;
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 10px;
+  min-width: 70px;
+  padding: 7px;
+  text-align: center;
+}
+
+.ced_etsy_qnty_wrapper {
+  border: 1px solid #dddddd;
+  display: inline-block;
+}
+.ed_etsy_qnty_point {
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.ed_etsy_qnty_point,.ed_etsy_qnty_number{
+  padding: 5px;
+}
+.ed_etsy_qnty_number {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  min-width: 40px;
+  display: inline-block;
+  text-align: center;
+}
+.ced_etsy_product_piece {
+  display: inline-block;
+  color: #777777;
+  margin-left: 15px;
+}
+.ced_etsy_preview_btn {
+  background-color: grey;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 15px;
+  min-width: 450px;
+  padding: 5px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.ced_etsy_preview_buy_now{
+  background-color:#d0011b;
+  color: #ffffff;
+  margin-left: 10px;
+}
+.ced_etsy_thumbnail ul {
+  display: flex;
+  overflow-y: auto;
+  margin: 0;
+}
+.ced_etsy_thumbnail ul li {
+  width: 100px;
+  margin: 9px;
+  cursor: pointer;
+  overflow: hidden;
+  height: 55px;
+}
+.ced_etsy_thumbnail ul li img{
+  max-width: 100%;
+  width: auto;
+}
+.ced_etsy_preview_product_popup_body::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+.ced_etsy_product_wrapper {
+  padding: 10px;
+}
+.ced_etsy_product_listing {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+.ced_etsy_product_listing li {
+  display: flex;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+.ced_etsy_product_listing li .ced_etsy_product_value {
+  width: 110px;
+  font-weight: 500;
+}
+.ced_etsy_product_desc {
+  width: calc(100% - 120px);
+  margin-left: 10px;
+}
+.ced_etsy_product_title {
+  background-color: rgba(0,0,0,.02);
+  padding: 10px;
+  font-size: 18px;
+}
+.ced_etsy_product_para {
+  padding-left: 10px;
+}
+input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+}
+/*==========================================
+=            profile tab design            =
+==========================================*/
+.ced_etsy_config_details_fields {
+  overflow-y: auto;
+}
+.ced_etsy_config_details_fields table {
+  width: 100%;
+  background-color: #ffffff;
+  table-layout: fixed;
+}
+.ced_etsy_config_details_fields table td,
+.ced_etsy_config_details_fields table th {
+  padding: 10px;
+}
+.ced_etsy_config_heading {
+  text-align: left;
+  background-color: #0073aa;
+  color: #fff;
+  display: inline-block;
+  margin: 10px;
+}
+.ced_etsy_config_details_fields table td input[type="text"],
+.ced_etsy_config_details_fields table td select {
+  border: 1px solid #ddd;
+  height: auto;
+  width: 90%;
+}
+.ced_etsy_config_details_fields table td input[type="button"]
+{
+  width: 50% !important;
+}
+.ced_etsy_wal_required {
+  color: #fb0606;
+}
+.ced_etsy_config_details_fields table td label {
+  font-weight: lighter;
+  font-size: 15px;
+}
+.ced_etsy_profile_details_wrapper {
+  padding-right: 20px;
+}
+/*=====  End of profile tab design  ======*/
+.ced_etsy_immediate_operation
+{
+  display: block;
+  margin-left: 10px;
+}
+.ced_etsy_settings_heading , .ced_etsy_shipping_heading
+{
+  text-align: left;
+  background-color: #0073aa;
+  color: #fff !important;
+  display: inline-block;
+  margin: 10px;
+}
+.ced_etsy_prod_name
+{
+  font-size: 14px;
+}
+
+table tbody tr input.shipping_input
+{
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+  background-color: #fff;
+  color: #32373c;
+  outline: 0;
+  transition: 50ms border-color ease-in-out;
+  width: 80%;
+}
+table tbody.ced_etsy_shipping_section td
+{
+  padding: 0px;
+}
+.ced_etsy_preview_product_popup_close
+{
+  font-size: 15px;
+}
+
+  .pagination_button
+  {
+	height: auto;
+	width: 3%;
+	border:1px solid #ccc;
+  }
+  #pagination_input
+  {
+	width: 4%;
+	height: auto;
+	border:1px solid #ccc;
+  }
+  .ced_etsy_pagination_wrapper
+  {
+	margin-top: 5px;
+  }
+ .notice {
+  margin: 10px auto;
+  border-radius: 4px;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+}
+  .not_completed,
+  .outofstock
+  {
+	color: red;
+  }
+  .stock_alert
+  {
+	color: #b67700;
+  }
+  .success_upload_on_etsy,
+  .instock
+  {
+	color: green;
+  }
+  .success
+  {
+   color: green;
+ }
+ #ced_etsy_pagination_wrapper
+ {
+  margin-top: 10px;
+}
+#ced_etsy_pagination_wrapper a
+{
+  text-decoration: none;
+}
+.pagination_button
+{
+  width: 2%;
+  border: 1px solid #ccc;
+}
+.pagination_input
+{
+  width: 4%;
+  border: 1px solid #ccc;
+}
+.add_profile_button
+{
+  text-decoration: none;
+}
+.add_profile_button:hover
+{
+  color: #fff;
+}
+td input#ced_etsy_add_custom_profile_name
+{
+  margin-left: 26em;
+  background-color: #0073aa;
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+}
+.ced_etsy_profile_dropdown
+{
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  max-height: 10px;
+}
+.ced_etsy_profile_selected_on_popup
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 100%;
+  padding: 8px !important;
+}
+.select_boxes
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+}
+.select_boxes_product_page {
+	border: 1px solid #ddd;
+	height: auto !important;
+	width: auto;
+}
+
+.ced_etsy_parent_element h2 {
+  margin: 0px;
+}
+
+#ced_etsy_search_product_name {
+  width: 60%;
+}
+.ced-etsy-search-product-list {
+  position: absolute;
+  width: 37%;
+  display: none;
+  max-height: 200px;
+  overflow: scroll;
+  margin: 0px;
+  overflow-x: auto;
+  overflow-y: scroll;
+  scrollbar-width :none;
+  border : 1px solid #ccc;
+}
+.ced-etsy-search-product-list li {
+  padding: 5px;
+  margin: 0px;
+  color: #000000;
+  cursor: pointer;
+}
+.ced-etsy-search-product-list li:nth-child(odd) {
+  background-color: #ccc;
+}
+.ced-etsy-search-product-list li:nth-child(even) {
+  background-color: #fff;
+}
+.select_boxes_cat_map
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 100%;
+}
+.bulk-action-selector
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 60%;
+}
+.select_boxes_scheduler
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 90%;
+}
+.ced_etsy_inputs
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 40%;
+}
+.ced_etsy_shopsection_inputs
+{
+  width: 90%;
+}
+#search_id-search-input
+{
+  border: 1px solid #ddd;
+  height: auto !important;
+  width: 54%;
+}
+.ced_etsy_profile_popup_content
+{
+  width: 40%;
+  background-color: #fff;
+  /*overflow: hidden;*/
+}
+.ced_etsy_profile_popup_content div#profile_pop_up_head
+{
+  width: 90%;
+  margin: 10px auto;
+}
+#save_etsy_profile_through_popup
+{
+  margin:40px 0px;
+  width: 100%;
+}
+#save_profile_through_popup_container
+{
+  width: 90%;
+  margin: auto;
+}
+#profile_pop_up_head_main
+{
+  background-color: #eeeeee;
+  width: 90%;
+  margin:20px auto;
+  overflow: hidden;
+}
+#profile_pop_up_head_main h2
+{
+  color:  #0073aa;
+  /*text-align: center;*/
+  padding:15px;
+  float: left;
+  margin: 0px;
+  width: 80%;
+}
+#profile_pop_up_head h3
+{
+  color:  #0073aa;
+}
+/*.profile_pop_up_head_main h2.select_profile_on_popup_heading
+{
+  float: left;
+  width: 60%;
+  }*/
+  #profile_pop_up_head_main div
+  {
+	width: 20%;
+	float: left;
+	padding:15px;
+	text-align: right;
+  }
+  .ced_etsy_profile_popup_close
+  {
+	color: #877f7f;
+	cursor: pointer;
+  }
+/*.wp-list-table:nth-child(even)
+{
+  background-color: #eeeeee !important;
+  }*/
+
+  .switch_accounts:hover
+  {
+	color: #fff;
+  }
+/*.ced_etsy_assign_profile_popup_close
+{
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  color: #877f7f;
+  cursor: pointer;
+}
+*/
+.ced_etsy_wrap {
+  width: 100%;
+  margin: 10px auto;
+}
+.ced_etsy_setting_header.ced_etsy_bottom_margin
+{
+  width: 98%;
+  margin: 10px 0px 10px 0px;
+  padding: 15px;
+}
+.ced_etsy_license_divs
+{
+  width: 98%;
+}
+.ced_etsy_popup_wrap
+{
+  overflow: hidden;
+  /*background-color: #eeeeee;*/
+}
+.ced_etsy_popup_container
+{
+  width: 95%;
+  clear: both;
+  margin: 10px;
+}
+.ced_etsy_popup_input
+{
+  width: 60%;
+  float: left;
+  margin-bottom: 15px;
+}
+.ced_etsy_popup_label
+{
+ width: 38%;
+ float: left;
+ text-align: left;
+ font-size: 15px;
+}
+.ced_etsy_popup_input input
+{
+  width: 75%;
+}
+.ced_etsy_shippingConfig,.ced_etsy_paymentConfig,.ced_etsy_shpSectionConfig
+{
+  background-color: #eeeeee;
+  width: 98%;
+}
+.ced_etsy_shippingConfig h2, .ced_etsy_paymentConfig h2, .ced_etsy_shpSectionConfig h2 {
+  margin: 0px;
+  padding: 10px;
+  background-color: #0073aa;
+  color: #fff;
+  margin-bottom: -18px;
+}
+.ced_etsy_shippingConfig table,.ced_etsy_paymentConfig table,.ced_etsy_shpSectionConfig table
+{
+  border: 0px ;
+  background-color: #f9f9f9;
+}
+.ced_etsy_white_txt
+{
+  display: block;
+  margin: 5px auto;
+  font-size: 12px;
+  padding: 5px;
+}
+p.ced_etsy_button_right
+{
+  padding: 0px 5px 5px 5px;
+}
+#ced_etsy_add_more_shop_section {
+  /* background-color: #fff; */
+  color: #0073aa;
+  display: inline-block;
+  padding: 8px 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid;
+  cursor: pointer;
+}
+a.ced_configuration_plugin_main
+{
+  padding: 8px 15px !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  margin-bottom: 10px !important;
+  margin-left: -10px !important;
+}
+.ced_etsy_config_details_fields tr.attributeDatalabel td
+{
+  color: green;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 1px solid #e1e1e1;
+}
+.ced_etsy_config_details_fields table.attributeDatawrap
+{
+  border:1px solid #e1e1e1;
+}
+
+
+
+/*
+.wp-core-ui select {
+  width: 119px !important;
+  } */
+  .alignleft.actions.bulkactions {
+	display: flex;
+	margin-bottom: 10px;
+  }
+  .ced-marketplaces-heading-wrapper, .ced_etsy_setting_header {
+	background-color: #fff;
+  }
+  .ced_etsy_setting_header label {
+	color: black;
+	cursor: context-menu;
+  }
+  .ced_etsy_add_button:hover {
+	background: #fff;
+	color: #0073aa;
+  }
+  .ced_etsy_settings_heading {
+	padding: 14px !important;
+  }
+  .ced_etsy_settings_heading label {
+	cursor: default;
+  }
+  .ced_etsy_select.ced_etsy_global_select_box.select_boxes {
+	width: 100% !important;
+  }
+
+  .manage-column .select_boxes {
+	width: 100% !important;
+  }
+  #ced_etsy_add_more_shop_section:hover {
+	color: #fff;
+	background: #0073aa;
+  }
+  .short {
+	width: 72%;
+  }
+  .select.short {
+	width: 100% !important;
+  }
+  .ced_etsy_level1_category.ced_etsy_select_category.select2.ced_etsy_select2.select_boxes_cat_map {
+	width: 100% !important;
+  }
+  .ced_etsy_level2_category.ced_etsy_select_category.select_boxes_cat_map {
+	width: 100% !important;
+  }
+  .ced_etsy_level3_category.ced_etsy_select_category.select_boxes_cat_map {
+	width: 100% !important;
+  }
+  .manage_labels {
+	color: #fff;
+  }
+  .ced_etsy_custom_button {
+	border: 1px solid;
+  }
+  .ced_etsy_config_details_fields table td input[type="text"], .ced_etsy_config_details_fields table td select {
+	border: 1px solid #ddd;
+	height: auto;
+	width: 95%;
+  }
+  #save_global_settings {
+	width: 100px;
+	padding: 10px;
+	cursor: pointer;
+  }
+  #save_shipping_settings {
+	margin-top: 11px;
+  }
+  #ced_etsy_category_refresh_button {
+	cursor: pointer;
+  }
+  .ced_etsy_custom_button.save_profile_button {
+	cursor: pointer;
+  }
+  #ced_etsy_fetch_orders {
+	cursor: pointer;
+  }
+  .ced_etsy_shipping_Wrap_text {
+	margin: 0px;
+	margin-bottom: 0px;
+	padding: 10px;
+	background-color: #0073aa;
+	color: #fff;
+  }
+  .ced_etsy_shipping_details_division {
+	background: #0073aa;
+	display: flex;
+	justify-content: space-between;
+  }
+  .ced_etsy_top_wrapper #filter_button {
+	margin: 0;
+  }
+  .wp-core-ui .button, .wp-core-ui .button-secondary {
+	color: #0071a1;
+	border-color: #0071a1;
+	background: #f3f5f6;
+  }
+  .ced_etsy_bottom_margin {
+	background: #0073aa;
+  }
+  .ced_etsy_white_txt {
+	color: #fff;
+  }
+  .ced_etsy_bottom_margin h2 {
+	margin-bottom: -12px;
+  }
+  .ced_etsy_settings_heading {
+	width: 296%;
+  }
+  .ced_etsy_pagination span,
+  .ced_etsy_pagination button{
+	margin-right: 0px !important;
+  }
+  .ced_etsy_global_settings_fields_table thead th {
+	width: 196%;
+  }
+  .ced_etsy_button_add_shipping {
+	height: 35px;
+	margin: 20px !important;
+  }
+  .ced_menu_content, .ced_menu_button {
+	background: slateblue;
+	border-radius: 100%;
+	border: 1px solid #ccc;
+	width: 60px;
+	height: 60px;
+	margin-left: -40px;
+	position: absolute;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 60px;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transition: -webkit-transform ease-out 200ms;
+	transition: -webkit-transform ease-out 200ms;
+	transition: transform ease-out 200ms;
+	transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+	cursor: pointer !important;
+  }
+  .ced_menu_open {
+	display: none;
+  }
+  .ced_contact_menu_wrap {
+	margin: auto;
+	position: fixed;
+	bottom: 6px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 26px;
+	z-index: 99999;
+  }
+  .ced_menu_content:hover {
+	background: #EEEEEE;
+	color: #3290B1;
+  }
+  .ced_menu_content:nth-child(3) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+  }
+  .ced_menu_content:nth-child(4) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+  }
+  .ced_menu_button {
+	z-index: 2;
+	-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-transition-duration: 400ms;
+	transition-duration: 400ms;
+	-webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+	transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+	cursor: pointer;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+  }
+  .ced_menu_open:checked ~ .ced_menu_content:nth-child(3) {
+	transition-duration: 180ms;
+	-webkit-transition-duration: 180ms;
+	-webkit-transform: translate3d(80px, 104.99997px, 0);
+	transform: translate3d(-13px, -100px, 0);
+  }
+  .ced_menu_open:checked ~ .ced_menu_content:nth-child(4) {
+	transition-duration: 280ms;
+	-webkit-transition-duration: 280ms;
+	-webkit-transform: translate3d(-90.9466px, -52.47586px, 0);
+	transform: translate3d(-101.053px, -30.524px, 0);
+  }
+  .ced_skype {
+	background-color: #0073aa;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  .ced_skype:hover {
+	color: #669AE1;
+	text-shadow: none;
+  }
+  .ced_whatsapp {
+	background-color: green;
+	box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+  }
+  .ced_whatsapp:hover {
+	color: #70CC72;
+	text-shadow: none;
+  }
+  .ced_menu_button img {
+	margin-top: 7px;
+  }
+  .get_etsy_sop_name {
+	font-weight: bold;
+	font-size: 12px;
+  }
+  #ced_etsy_shipment_wrap div table tbody tr{
+	display: block;
+  }
+  #ced_etsy_shipment_wrap table tbody tr td{
+	width: 50%;
+  }
+  #ced_etsy_shipment_wrap table tbody tr td input[type="text"]{
+	width: 100%;
+  }
+
+  .ced_spinner{
+	visibility: hidden;
+  }
+  .section_info {
+	display: block;
+	color: palegreen;
+	font-size: 12px;
+	font-style: italic;
+  }
+  .etsy_shipping_sections_wrap {
+	padding: 10px;
+  }
+  .shop_sections {
+	padding: 5px;
+	display: inline-block;
+	font-size: 15px;
+  }
+  .ced_bold {
+	font-weight: bold;
+  }
+  .ced_reset {
+	margin-left: 5px;
+  }
+.ced_etsy_heading {
+  background-color: #fff;
+  margin: 15px 0px;
+  padding: 10px;
+  border-radius: 12px;
+}
+  .ced_etsy_heading h2{
+	margin: 0px;
+  }
+  .ced_etsy_parent_element h2 {
+	padding: 8px 5px;
+  }
+
+  .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+
+  .slider.round:before {
+	border-radius: 50%;
+  }
+
+.wp-list-table.ced_etsy_global_settings {
+  width: 100%;
+  margin: 25px auto;
+  padding: 5px 10px;
+  border-bottom: 2px solid #ccc !important;
+  box-shadow: 1px 1px 10px #ccc;
+}
+  .wp-list-table.ced_etsy_global_settings tbody tr td label,
+  .ced_etsy_child_element table tbody tr td label,
+  .ced_etsy_child_element table tbody tr th label{
+	font-weight: bold;
+	font-size: 14px;
+	color: hsl;
+  }
+  table.ced_etsy_schedule_wrap,.ced_etsy_config_table {
+	border: none !important;
+  }
+  .wp-list-table.ced_etsy_global_settings tbody tr td {
+	padding: 5px 10px 5px 0px;
+	min-width: 30%;
+  }
+  select.ced_etsy_product_select {
+	width: 50% !important;
+  }
+
+  .ced_etsy_variation_product_level_wrap {
+	border: 1px solid #7e8993;
+	width: 100%;
+	padding: 15px;
+	border-radius: 5px;
+  }
+  .ced_etsy_variation_product_level_wrap h2 ,
+  .ced_etsy_simple_product_level_wrap h2 {
+	border: 1px solid #7e8993;
+	border-radius: 5px;
+  }
+  #return-adress span.select2 {
+	width: 90% !important;
+  }
+  .ced_etsy_variation_product_content ,
+  .ced_etsy_simple_product_content {
+	max-height: 350px;
+	overflow: scroll;
+	overflow-x: auto;
+	overflow-y: scroll;
+	border-radius: 5px;
+  }
+  .ced_etsy_simple_product_level_wrap {
+	padding: 15px;
+	margin: 10px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+  }
+  #etsy_inventory_options_variable {
+	width: 100% !important;
+	min-height: unset !important;
+  }
+  .ced_etsy_instruction_list {
+	margin: 0px 10px !important;
+	padding: 0px 8px !important;
+	list-style-type: disc;
+  }
+  .dashicons.ced_etsy_instruction_icon.dashicons-arrow-down-alt2,
+  .dashicons.ced_etsy_instruction_icon.dashicons-arrow-up-alt2 {
+	position: relative;
+	float: right;
+	right: 10px;
+  }
+  .ced_etsy_child_element {
+	border-top: 1px solid #ccc;
+	padding: 5px;
+  }
+
+  .ced_etsy_instruction_list li {
+	font-size: 12px;
+  }
+
+  .ced-button-wrapper {
+	margin: 20px auto;
+  }
+
+.navigation-wrapper, .cedcommerce-top-border {
+  position: fixed;
+  width: 100%;
+  top: 30px;
+  padding: 15px;
+  margin-left: -20px;
+  z-index: 999;
+  box-shadow: 0 8px 16px 0 rgba(85,93,102,.3);
+}
+
+.cedcommerce-tip {
+  font-size: 12px;
+  color: darkcyan;
+}
+.cedcommerce-tip a {
+  text-decoration: underline;
+  font-weight: 407;
+  font-style: italic;
+}
+.default_modal {
+  display: block;
+}
+.ced_etsy_body {
+  margin-top: 6%;
+  width: 99%;
+}
+.ced_etsy_document,
+.ced_etsy_add_account_button {
+  position: absolute;
+  right: 12%;
+}
+
+.ced_etsy_document_link {
+  background-color: darkviolet;
+  border: 1px solid transparent;
+  padding: 9px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.ced_etsy_document_link:hover{
+  color: #fff;
+  opacity: 0.9;
+}
+
+.ced_etsy_shipping_profile_conditional{
+  display: none;
+}
+#ced_etsy_cancel_category_button {
+  background: red;
+  border: 1px solid transparent;
+  opacity: 0.7;
+}
+
+.ced_etsy_variation_product_level_wrap {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ced_etsy_simple_product_content {
+  max-height: 350px;
+  display: block;
+  overflow: scroll;
+}
+.wp-list-table {
+  border: none !important;
+  border-radius: 12px;
+  /*padding: 15px;*/
+}
+.ced_etsy_schedule_wrap select {
+  min-width: 20%;
+}
+
+select , input{
+  border: 1px solid #ddd !important;
+}
+
+.ced_etsy_top_wrapper {
+	padding: 12px;
+	background-color: #fff;
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+}
+.ced_etsy_filter_label{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0px 15px;
+}
+.ced_etsy_wrap {
+	width: 100%;
+	margin: 10px auto;
+	position: sticky;
+	top: 100px;
+}
+.tablenav {
+	clear: both;
+	height: 30px;
+	margin: 6px 0 4px;
+	padding-top: 5px;
+	vertical-align: middle;
+}
+.ced_etsy_bulk_actions {
+	position: relative;
+	top: 25px;
+	position: sticky;
+	top: 153px;
+	background: #fff;
+	padding: 20px;
+	z-index: 999;
+	border-bottom: 1px solid #ccc;
+}
+#ced_etsy_bulk_operation {
+  margin-right: 20px;
+  color: #fff;
+}
+.ced_etsy_bulk_actions input {
+  padding: 6px;
+  border-radius: 4px;
+  opacity: 0.7;
+  border: none !important;
+  cursor: pointer;
+}
+
+
+
+.success {
+  background-color: green;
+}
+.primary {
+  background-color: darkblue;
+}
+.warm {
+  background-color: darkcyan;
+}
+.cool {
+  background-color: #2271b1;
+}
+.fail {
+  background-color: red;
+}
+
+.ced_etsy_bulk_actions input:hover {
+  padding: 5px;
+  display: inline-block;
+  box-shadow: 5px 5px 4px darkgray;
+  transition-delay: 200ms;
+  transition-property: padding;
+}
+
+.ced_etsy_timeline_body{
+	width: 49%;
+	min-width: 49%;
+	 min-height: 350px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 5px;
+
+}
+.ced_etsy_timeline_body,
+.ced_etsy_timeline_content {
+  float: left;
+}
+.ced_etsy_timeline_content{
+  max-height: 278px;
+   overflow: scroll;
+  overflow-x: auto;
+  overflow-y: scroll;
+  scrollbar-width :none;
+   margin: 0px 5px;
+   width: 99%
+}
+.ced_etsy_timeline_body h2 {
+  padding: 10px;
+	margin: 0;
+	background-color: #107caf;
+	border-radius: 15px 0px 61px 12px;
+	color: #fff;
+	font-size:15px;
+}
+.ced_etsy_product_log thead td ,
+.ced_etsy_product_log_head thead td,
+.ced_etsy_order_log_head thead td{
+  font-weight: bold;
+	font-weight: bold;
+	width: 20%;
+	padding: 5px 10px;
+
+}
+
+.ced_etsy_log_rows td{
+	width: 20%;
+	padding: 2px 5px;
+}
+
+.ced_etsy_product_log_head,
+.ced_etsy_order_log_head{
+  margin: 0px;
+}
+
+.log_item_label {
+  font-weight: normal;
+}
+
+
+.ced_etsy_product_log_head,
+.ced_etsy_order_log_head {
+  width: 98%;
+}
+
+.etsy_log_success {
+  color: green;
+  opacity: 0.7;
+}
+.etsy_log_fail {
+  color: red;
+  opacity: 0.7;
+}
+.log_details{
+  cursor: pointer;
+}
+.log_message.show {
+	position: fixed;
+	background: lightsteelblue;
+	color: black;
+	z-index: 9999;
+	padding: 0px 10px;
+	border-radius: 12px;
+	top: 15%;
+	width: 40%;
+	margin: 10px 14%;
+	border: 1px solid transparent;
+	max-height: 450px;
+	overflow: scroll;
+	left: 18%;
+}
+
+.log_message h3 {
+	background: cornflowerblue;
+	color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	position: fixed;
+  text-transform: capitalize;
+	max-width:33%;
+  font-size: 12px;
+}
+
+.log_message pre {
+	margin: 10% auto 5% auto;
+}
+.ced_etsy_load_more{
+  cursor: pointer;
+  text-decoration: underline !important;
+}
+#ced_close_log_message {
+	cursor: pointer;
+	margin: 25px auto;
+	position: fixed;
+	left: 68%;
+	right: 30%;
+}
+.ced_etsy_logs {
+  width: 100%;
+	border-spacing: 0px;
+}
+.ced_etsy_log_rows{
+  box-shadow: 1px 1px beige;
+}
+.ced_etsy_logs tr:nth-child(even) {
+	background: #2f84d44a;
+	border-color:#1785eb4a;
+}
+.ced_progress {
+	background-color: aliceblue;
+	padding: 1%;
+	border-radius: 8px;
+	width: 24%;
+	left: 37%;
+	top: 30%;
+	height: 128px;
+}
+#ced_progress {
+	-webkit-appearance: none;
+	height: 1;
+	height: 12px;
+	width: 100%;
+}
+.success-admin-notices.is-dismissible {
+	max-height: 200px;
+	background-color: #fff;
+	border-radius: 12px;
+	overflow: scroll;
+	display : none;
+}
+
+.notice {
+padding: 5px;
+	margin: 5px;
+	border-radius: 4px;
+	border: navajowhite;
+	color: #fff;
+	opacity: 0.8;
+}
+.notice.notice-error {
+	background-color: thistle;
+	color: red;
+
+}
+.notice.notice-success {
+	background-color: darkseagreen;
+	color: darkgreen;
+}
+.navigation-wrapper, .cedcommerce-top-border {
+	position: fixed;
+	width: calc(100% - 188px) !important;
+	top: 30px;
+	padding: 15px;
+	margin-left: -20px;
+	z-index: 999;
+	box-shadow: 0 8px 16px 0 rgba(85,93,102,.3);
+	/* right: 0 !important; */
+}
+.ced_etsy_document, .ced_etsy_add_account_button {
+	position: absolute;
+	right: 20px;
+}
+.search-box #search-submit {
+  margin: 0;
+}
+
+@media screen and (max-width: 767px){
+  .navigation{
+   border-bottom: none;
+ }
+ .navigation li{
+   margin-top: 6px;
+ }
+ .navigation li a{
+   border-width: 1px 1px 1px 1px;
+ }
+ .ced-marketplaces-heading-wrapper h2, .ced_etsy_setting_header h2{
+   font-size: 16px;
+ }
+ .ced_etsy_account_configuration_fields_table select{
+   width: 120px;
+   font-size: 13px !important;
+   min-width: 120px;
+ }
+ .ced-marketplace-card{
+   width: 100%;
+   margin-right: 0;
+ }
+ .ced-marketplaces-heading-main-wrapper, .ced_etsy_wrap.ced_etsy_wrap_extn, .ced_etsy_account_configuration_wrapper{
+   padding-right: 10px;
+ }
+ .ced-marketplaces-card-view-wrapper{
+   padding-right: 10px;
+ }
+ .ced_etsy_add_account_popup_close{
+   top: 2px;
+   right: 15px;
+ }
+ .navigation-wrapper, .cedcommerce-top-border {
+	width: calc(100% - 188px);
+}
+.navigation-wrapper .navigation {
+	width: 75%;
+	overflow: scroll;
+	display: flex;
+}
+}
+@media screen and (max-width: 1191px) {
+  #ced_etsy_preview{
+	display: none;
+  }
+	.navigation-wrapper, .cedcommerce-top-border {
+	width: calc(100% - 78px) !important;
+}
+.ced_etsy_document, .ced_etsy_add_account_button {
+	position: absolute;
+	right: 7px;
+}
+.navigation-wrapper .navigation {
+	width: 75%;
+	overflow: scroll;
+	display: flex;
+}
+.ced_etsy_bulk_actions {
+	display: flex;
+}
+.tablenav-pages.one-page {
+	display: none;
+}
+.search-box input {
+	width: 100px !important;
+}
+.ced_etsy_top_wrapper {
+	display: flex;
+	align-items: center;
+	position: relative;
+	content: '';
+}
+.ced_etsy_filter_label {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px 15px;
+	width: 50px;
+}
+.ced_etsy_filter_label {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px 15px;
+	width: auto;
+}
+.ced_etsy_top_wrapper #filter_button {
+	margin: 0;
+	margin-left: 12px;
+}
+.ced_etsy_filter_label {
+	width: auto;
+}
+p.search-box {
+	float: right;
+	margin: 0;
+	float: none;
+	position: absolute;
+	top: 60px;
+	margin: 0 10px;
+}
+.ced_etsy_wrap {
+	width: 100%;
+	margin: 10px auto;
+	min-height: 100px;
+	background: #fff;
+}
+.search-box input {
+	width: auto !important;
+}
+.select_boxes_product_page {
+	border: 1px solid #ddd;
+	height: auto !important;
+	width: auto;
+}
+.ced_etsy_heading {
+	background-color: #fff;
+	margin: 55px 0px;
+	padding: 10px;
+	border-radius: 12px;
+	margin-bottom: 10px;
+}
+}
+
+.setting_label span {
+  padding-right: 5px;
+}
+.setting_label {
+  padding-right: 10px;
+  font-weight: bold;
+}
+.setting_label.required {
+  color: red;
+}
+.setting_label.recommended {
+  color: green;
+}
+.setting_label.optional {
+  color: orange;
+}
+.setting_label.personalization {
+  color: #2271b1;
+}
+
+.setting_label.shipping {
+  color: darkblue;
+}
+.ced_etsy_create_new_shipping_profile{
+  position: relative;
+  top: 30px;
+}
+.ced_etsy_category_specific {
+  display: none;
+}
+
+.ced_etsy_notification {
+  background-color: burlywood;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+.ced_etsy_notification p {
+  font-size: 14px;
+}
+.button.button-primary.expired_access_token {
+  background-color: red;
+  color: #fff;
+  border: tan;
+  opacity: 0.8;
+}

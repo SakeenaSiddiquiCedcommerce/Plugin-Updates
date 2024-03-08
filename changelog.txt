@@ -1,0 +1,163 @@
+*** Etsy Integration for WooCommerce  ***
+
+2023-06-02 - version 2.3.0
+* Fix - Orders being not imported in WooCommerce
+
+2023-06-01 - version 2.2.9
+* Fix - Prevent cancelled orders import in WooCommerce
+
+2023-05-11 - version 2.2.8
+* Feature - Option to create Etsy users as WooCommerce customers 
+* Feature - Option to get translated information of the Etsy listing 
+* Feature - Option to update stock levels in WooCommerce without pulling in Etsy orders
+* Fix - Remove validation of shipping profile for digital products
+
+2023-04-14 - version 2.2.7
+* Update - Etsy product view link
+
+2023-04-09 - version 2.2.6
+* Fix - Manage price type conversion for new products
+
+2023-04-07 - version 2.2.5
+* Add - Improved Stability
+* Fix - Sync variation name instead of slug
+
+2023-02-06 - version 2.2.4
+* Fix - Skipping global values for product dimensions
+
+2023-01-11 - version 2.2.3
+* Update - Order creation process
+
+2023-01-06 - version 2.2.2
+* Fix - Skipping default tags while listing product to etsy
+* Update - Stock management at variation and parent level for variable product
+
+2022-11-08 - version 2.2.1
+* Add - Unlink etsy product action
+* Fix - Shipping method in order
+* Fix - Inventory update on order creation
+
+2022-10-10 - version 2.2.0
+* Fix - Force product listed as draft
+* Fix - Sku not updating
+
+2022-07-13 - version 2.1.9
+* Fix - Shipping cost not being added while importing etsy order
+
+2022-07-01 - version 2.1.8
+* Fix - Quantity issue while product upload
+
+2022-06-30 - version 2.1.7
+* Fix - Order import issue
+
+2022-06-29 - version 2.1.6
+* Add - Compatible with latest Etsy api V3
+* Add - Selecting category of attributes to sync
+
+
+2022-06-27 - version 2.1.5
+* Add - Improved Stability
+
+2022-06-16 - version 2.1.4
+* Update - Order response status in timeline
+* Fix - Strip extra tags in product description
+
+2022-05-27 - version 2.1.3
+* Fix - Minor Bug fixes
+
+2022-05-25 - version 2.1.2
+* Add - Timeline section to view recent activities
+* Add - UI/UX update
+* Fix - Shipping profiles options
+* Fix - Product dimensions update
+
+2022-03-29 - version 2.1.1
+* Fix - Bug fixes
+
+2022-03-23 - version 2.1.0
+* Add - Improved Stability
+
+2022-02-09 - version 2.0.9
+* Fix - Order fetch issue
+
+2022-02-04 - version 2.0.8
+* Fix - Prevent duplicate listing creation 
+
+2021-10-12 - version 2.0.7
+* Add - Improved Stability
+* Fix - Variation prepration data issue
+
+2021-08-04 - version 2.0.6
+* Add - Optimised Import Product Feature
+
+2021-07-08 - version 2.0.5
+* Fix - Improved Stability
+
+2021-07-01 - version 2.0.4
+* Fix - Variable product sync
+
+2021-06-18 - version 2.0.3
+* Fix - Inventory and order schedules
+* Add - Improved stability
+
+2021-05-26 - version 2.0.2
+* Fix - Updated when made values
+* Fix - Profile category specific data save
+* Fix - Upload/Update gallery image issue
+* Add - Support for all types of digital files
+
+2021-05-12 - version 2.0.1
+* Fix - Add shipping profile 
+* Fix - Featured image upload issue
+
+2021-05-07 - version 2.0.0
+* Add - Auto upload products feature from Woocommerce to Etsy
+* Add - Auto import products feature from Etsy to Woocommerce [ Import Module ]
+* Add - Shipment Tracking plugin compatibility [ will update tracking information automatically to Etsy from Woocommerce ]
+* Add - Support digital files upload on Etsy from Woocommerce
+* Add - Order import settings
+* Add - Improved stability
+
+2020-11-26 - version 1.1.2
+* Add - Improved stability
+
+2020-11-12 - version 1.1.1
+* Add - Import personalization info of order
+* Add - Import gift message
+* Add - Import buyer's message
+
+2020-09-30 - version 1.1.0
+* Add - Improved Stability
+
+2020-09-30 - version 1.0.9
+* Add - App notification
+
+2020-09-01 - version 1.0.8
+* Add - Submit tracking details on Etsy from Woocommerce order section
+* Add - Email restrictions to the customer for Etsy order
+* Add - Etsy label in Woocommerce order list table.
+
+2020-07-29 - version 1.0.7
+* Add - Improved Stability
+
+2020-07-28 - version 1.0.6
+* Add - Filter products by stock status
+
+2020-07-07 - version 1.0.5
+* Add - Auto sync of existing products on Etsy
+
+2020-06-22 - version 1.0.4
+* Fix - Display variation stock issue
+
+2020-05-28 - version 1.0.3
+* Update - Inventory Update Process
+
+2020-05-11 - version 1.0.2
+* Update -Improved Product Upload Process
+
+2020-04-29 - version 1.0.1
+* Update - Improved Stability
+* New - Design Changes
+
+2020-04-10 - version 1.0.0
+* Inital release
